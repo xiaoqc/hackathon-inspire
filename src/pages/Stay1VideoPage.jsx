@@ -8,7 +8,7 @@ export default function Stay1VideoPage() {
   return (
     <BasePage>
       <video id="vid1" autoplay muted style={{ width: "100%" }}>
-        <source src="stay-1-video.mp4" type="video/mp4"></source>
+        <source src="stay1-video.mp4" type="video/mp4"></source>
       </video>
     </BasePage>
   );
