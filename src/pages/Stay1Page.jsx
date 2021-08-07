@@ -1,15 +1,16 @@
 import { useEffect } from "react";
-import BasePage from "./BasePage";
+import BaseStayPage from "./BaseStayPage";
 
 export default function Stay1VideoPage() {
   useEffect(() => {
     document.getElementById("vid1").play();
   }, []);
   return (
-    <BasePage>
+    <BaseStayPage>
       <video id="vid1" autoplay muted style={{ width: "100%" }}>
         <source src="stay1-video.mp4" type="video/mp4"></source>
       </video>
-    </BasePage>
+      <img src="stay1-pdp-screen-shot.jpg" style={{ width: "100%" }} alt="" />
+    </BaseStayPage>
   );
 }

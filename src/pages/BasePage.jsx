@@ -1,20 +1,13 @@
-import {
-  viewportHeight,
-  viewportWidth,
-  frameSidePadding,
-  frameTopPadding
-} from "../constants";
+import { viewportWidth } from "../constants";
 export default function BasePage({ children }) {
   return (
-    <div
-      style={{
-        width: viewportWidth,
-        height: viewportHeight,
-        paddingLeft: frameSidePadding,
-        paddingTop: frameTopPadding
-      }}
-    >
+    <div className="base-page" style={pageStlyes}>
       {children}
     </div>
   );
 }
+
+const pageStlyes = {
+  width: viewportWidth,
+  position: "relative"
+};
