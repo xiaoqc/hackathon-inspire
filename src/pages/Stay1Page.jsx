@@ -7,10 +7,25 @@ export default function Stay1VideoPage() {
   }, []);
   return (
     <BaseStayPage>
-      <video id="vid1" autoplay muted style={{ width: "100%" }}>
+      <video
+        id="vid1"
+        autoplay
+        muted
+        style={{
+          scrollSnapAlign: "start",
+          width: "100%"
+        }}
+      >
         <source src="stay1-video.mp4" type="video/mp4"></source>
       </video>
-      <img src="stay1-pdp-screen-shot.jpg" style={{ width: "100%" }} alt="" />
+      <img
+        src="stay1-pdp-screen-shot.jpg"
+        style={{
+          scrollSnapAlign: "start",
+          width: "100%"
+        }}
+        alt=""
+      />
     </BaseStayPage>
   );
 }

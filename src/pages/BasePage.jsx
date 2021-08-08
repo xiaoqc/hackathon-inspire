@@ -9,5 +9,7 @@ export default function BasePage({ children }) {
 
 const pageStlyes = {
   width: viewportWidth,
-  position: "relative"
+  position: "relative",
+  scrollSnapAlign: "start",
+  flex: `0 0 ${viewportWidth}px`
 };

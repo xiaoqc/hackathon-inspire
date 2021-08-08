@@ -37,7 +37,9 @@ const frameStyles = {
 const viewportStyles = {
   // position: "relative"
   overflow: "scroll",
-  height: viewportHeight
+  height: viewportHeight,
+  scrollSnapType: "both mandatory",
+  display: "flex"
 };
 
 const imgStyles = {

@@ -1,12 +1,31 @@
+import { useState } from "react";
 import "./styles.css";
 import Stay1SwipeToPDP from "./scenes/Stay1SwipeToPDP";
+import SwipeToNextVideo from "./scenes/SwipeToNextVideo";
 import Viewport from "./Viewport";
 
+const scenes = [Stay1SwipeToPDP, SwipeToNextVideo];
+
 export default function App() {
+  const [sceneIndex, setSceneIndex] = useState(1);
+
+  const CurrentScene = scenes[sceneIndex];
+
   return (
     <div className="app" style={appStyles}>
+      {scenes.map((s, index) => (
+        <button
+          style={index === sceneIndex ? activeBtnStyle : btnStyle}
+          onClick={() => {
+            setSceneIndex(index);
+          }}
+        >
+          {s.name}
+        </button>
+      ))}
+
       <Viewport>
-        <Stay1SwipeToPDP />
+        <CurrentScene />
       </Viewport>
     </div>
   );
@@ -14,6 +33,17 @@ export default function App() {
 
 const appStyles = {
   position: "relative",
-  marginLeft: 20,
-  marginTop: 20
+  marginLeft: 40,
+  marginTop: 40
+};
+
+const btnStyle = {
+  marginRight: 5,
+  marginBottom: 10
+};
+
+const activeBtnStyle = {
+  ...btnStyle,
+  backgroundColor: "#000",
+  color: "#fff"
 };
