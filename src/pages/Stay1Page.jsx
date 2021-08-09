@@ -1,30 +1,21 @@
-import { useEffect } from "react";
-import BaseStayPage from "./BaseStayPage";
+import BaseStayPage, {
+  MainVideo,
+  CompensateDiv,
+  PdpImage
+} from "./shared/BaseStayPage";
+
+import PageInfo from "./shared/PageInfo";
 
 export default function Stay1VideoPage() {
-  useEffect(() => {
-    document.getElementById("vid1").play();
-  }, []);
   return (
     <BaseStayPage>
-      <video
-        id="vid1"
-        autoplay
-        muted
-        style={{
-          scrollSnapAlign: "start",
-          width: "100%"
-        }}
-      >
-        <source src="stay1-video.mp4" type="video/mp4"></source>
-      </video>
-      <img
-        src="stay1-pdp-screen-shot.jpg"
-        style={{
-          scrollSnapAlign: "start",
-          width: "100%"
-        }}
-        alt=""
+      <MainVideo src="stay1-video.mp4" />
+      <CompensateDiv />
+      <PdpImage src="stay1-pdp-screen-shot.jpg" />
+      <PageInfo
+        title="$200, 4 guests, entire house"
+        tags={["#treehouse", "#beach", "#superhost", "#tiny-home"]}
+        location="📍 Josha tree, California"
       />
     </BaseStayPage>
   );

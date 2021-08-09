@@ -1,4 +1,4 @@
-import { viewportWidth } from "../constants";
+import { viewportWidth } from "../../constants";
 export default function BasePage({ children }) {
   return (
     <div className="base-page" style={pageStlyes}>
