@@ -25,6 +25,7 @@ export default function Stay1VideoPage() {
         tags={["#treehouse", "#beach", "#superhost", "#tiny-home"]}
         location="📍 Josha tree, California"
         onReviewsClick={() => scrollViewport(3010)}
+        onTagClick={() => scrollViewport(3010)}
       />
     </BaseStayPage>
   );

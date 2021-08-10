@@ -33,7 +33,7 @@ export default function App() {
       ))}
 
       <Viewport>
-        <CurrentScene />
+        <CurrentScene setSceneIndex={setSceneIndex} />
       </Viewport>
     </div>
   );
