@@ -19,7 +19,7 @@ export default function Stay1VideoPage({ setSceneIndex }) {
     <BaseStayPage>
       <MainVideo src="stay1-video.mp4" />
       <CompensateDiv />
-      <PdpImage src="stay1-pdp-screen-shot.jpg" />
+      <PdpImage src="stay1-pdp-screen-shot.jpeg" />
       <PageActions onBookClick={() => scrollViewport(2870)} />
       <PageInfo
         title="$200, 4 guests, entire house"
