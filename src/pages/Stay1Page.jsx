@@ -6,6 +6,7 @@ import BaseStayPage, {
 
 import PageActions from "./shared/PageActions";
 import PageInfo from "./shared/PageInfo";
+import { SceneToIndexMap } from "../constants";
 
 function scrollViewport(distance) {
   document
@@ -13,7 +14,7 @@ function scrollViewport(distance) {
     .scroll({ top: distance, behavior: "smooth" });
 }
 
-export default function Stay1VideoPage() {
+export default function Stay1VideoPage({ setSceneIndex }) {
   return (
     <BaseStayPage>
       <MainVideo src="stay1-video.mp4" />
@@ -23,9 +24,13 @@ export default function Stay1VideoPage() {
       <PageInfo
         title="$200, 4 guests, entire house"
         tags={["#treehouse", "#beach", "#superhost", "#tiny-home"]}
+        locationTags={["#laketahoe", "#francetravel"]}
         location="📍 Josha tree, California"
         onReviewsClick={() => scrollViewport(3010)}
-        onTagClick={() => scrollViewport(3010)}
+        onTagClick={() => setSceneIndex(SceneToIndexMap.NavigateToHashtagPage)}
+        onLocationTagClick={() =>
+          setSceneIndex(SceneToIndexMap.NavigateLocationHashtagPage)
+        }
       />
     </BaseStayPage>
   );

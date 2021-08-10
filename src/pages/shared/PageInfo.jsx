@@ -1,9 +1,11 @@
 export default function PageInfo({
   title,
   tags,
+  locationTags,
   location,
   onReviewsClick,
-  onTagClick
+  onTagClick,
+  onLocationTagClick
 }) {
   return (
     <div
@@ -31,9 +33,16 @@ export default function PageInfo({
       >
         <span style={{ color: "#fb4363" }}>★</span> (4.5) 230 reviews
       </div>
-      {tags.map((t) => (
-        <Tag onTagClick={onTagClick} key={t} value={t} />
-      ))}
+      <div>
+        {tags.map((t) => (
+          <Tag onTagClick={onTagClick} key={t} value={t} />
+        ))}
+      </div>
+      <div>
+        {locationTags.map((t) => (
+          <Tag onTagClick={onLocationTagClick} key={t} value={t} />
+        ))}
+      </div>
       <div
         className="location"
         style={{
