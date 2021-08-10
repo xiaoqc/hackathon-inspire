@@ -2,11 +2,17 @@ import { useState } from "react";
 import "./styles.css";
 import Stay1SwipeToPDP from "./scenes/Stay1SwipeToPDP";
 import SwipeToNextVideo from "./scenes/SwipeToNextVideo";
-import NavigateToHashtag1Page from "./scenes/NavigateToHashtag1Page";
+import NavigateToHashtagPage from "./scenes/NavigateToHashtagPage";
+import NavigateLocationHashtagPage from "./scenes/NavigateLocationHashtagPage";
 
 import Viewport from "./Viewport";
 
-const scenes = [Stay1SwipeToPDP, SwipeToNextVideo, NavigateToHashtag1Page];
+const scenes = [
+  Stay1SwipeToPDP,
+  SwipeToNextVideo,
+  NavigateToHashtagPage,
+  NavigateLocationHashtagPage
+];
 
 export default function App() {
   const [sceneIndex, setSceneIndex] = useState(0);
