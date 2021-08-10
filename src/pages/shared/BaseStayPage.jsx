@@ -31,7 +31,7 @@ export function CompensateDiv() {
         textAlign: "center"
       }}
     >
-      this is to compensate google height
+      this is to compensate the video height
     </div>
   );
 }
