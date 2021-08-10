@@ -1,4 +1,4 @@
-export default function PageInfo({ title, tags, location }) {
+export default function PageInfo({ title, tags, location, onReviewsClick }) {
   return (
     <div
       className="page-info"
@@ -17,8 +17,16 @@ export default function PageInfo({ title, tags, location }) {
       >
         {title}
       </div>
+      <div
+        style={{
+          margin: "5px 0"
+        }}
+        onClick={onReviewsClick}
+      >
+        <span style={{ color: "#fb4363" }}>★</span> (4.5) 230 reviews
+      </div>
       {tags.map((t) => (
-        <Tag value={t} />
+        <Tag key={t} value={t} />
       ))}
       <div
         className="location"

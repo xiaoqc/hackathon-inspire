@@ -9,7 +9,7 @@ import {
 export default function Viewport({ children }) {
   return (
     <div className="frame" style={frameStyles}>
-      <div className="viewport" style={viewportStyles}>
+      <div id="viewport" className="viewport" style={viewportStyles}>
         {children}
       </div>
       <img
