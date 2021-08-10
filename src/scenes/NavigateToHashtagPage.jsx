@@ -1,11 +1,9 @@
 import HashtagPage from "../pages/HashtagPage";
-import Stay1Page from "../pages/Stay1Page";
 
-export default function NavigateToHashTagPage() {
+export default function NavigateToHashTagPage({ setSceneIndex }) {
   return (
     <>
-      <Stay1Page />
-      <HashtagPage />
+      <HashtagPage setSceneIndex={setSceneIndex} />
     </>
   );
 }

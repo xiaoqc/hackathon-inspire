@@ -1,11 +1,9 @@
-import Stay1Page from "../pages/Stay1Page";
 import LocationsHashtagPage from "../pages/LocationsHashtagPage";
 
-export default function NavigateLocationsHashtagPage() {
+export default function NavigateLocationsHashtagPage({ setSceneIndex }) {
   return (
     <>
-      <Stay1Page />
-      <LocationsHashtagPage />
+      <LocationsHashtagPage setSceneIndex={setSceneIndex} />
     </>
   );
 }

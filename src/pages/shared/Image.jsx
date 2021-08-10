@@ -1,4 +1,4 @@
-export default function Image({ src, altText = "" }) {
+export default function Image({ src, altText = "", onImageClick }) {
   return (
     <img
       src={src}
@@ -6,6 +6,7 @@ export default function Image({ src, altText = "" }) {
         scrollSnapAlign: "start",
         width: "100%"
       }}
+      onClick={onImageClick}
       alt={altText}
     />
   );
