@@ -52,5 +52,43 @@ export function IconBack() {
     <g>
       <path d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"></path>
     </g>
+
+export function IconArrowLeft() {
+  return (
+    <svg
+      viewBox="0 0 32 32"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="presentation"
+      focusable="false"
+      style={{
+        display: "block",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: 4,
+        overflow: "visible"
+      }}
+    >
+      <g fill="none">
+        <path d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"></path>
+      </g>
+    </svg>
+  );
+}
+
+export function IconClose() {
+  return (
+    <svg
+      viewBox="0 0 12 12"
+      role="presentation"
+      aria-hidden="true"
+      focusable="false"
+      style={{ display: "block", fill: "currentColor" }}
+    >
+      <path
+        d="m11.5 10.5c.3.3.3.8 0 1.1s-.8.3-1.1 0l-4.4-4.5-4.5 4.5c-.3.3-.8.3-1.1 0s-.3-.8 0-1.1l4.5-4.5-4.4-4.5c-.3-.3-.3-.8 0-1.1s.8-.3 1.1 0l4.4 4.5 4.5-4.5c.3-.3.8-.3 1.1 0s .3.8 0 1.1l-4.5 4.5z"
+        fill-rule="evenodd"
+      ></path>
+    </svg>
   );
 }

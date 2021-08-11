@@ -19,6 +19,18 @@ export default function Viewport({ children }) {
         height={805}
         src="../iphone-frame.png"
       />
+      <div
+        className="iphone-home-line"
+        style={{
+          background: "#fff",
+          position: "absolute",
+          height: 5,
+          bottom: 28,
+          borderRadius: 5,
+          left: 130,
+          right: 130
+        }}
+      />
     </div>
   );
 }
