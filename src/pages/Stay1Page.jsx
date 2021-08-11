@@ -6,7 +6,8 @@ import BaseStayPage, {
 
 import PageActions from "./shared/PageActions";
 import PageInfo from "./shared/PageInfo";
-import { SceneToIndexMap } from "../constants";
+import CloseButton from "./shared/CloseButton";
+import ScrollUpButton from "./shared/ScrollUpButton";
 
 function scrollViewport(distance) {
   document
@@ -18,9 +19,13 @@ export default function Stay1Page({ onTagClick, onLocationTagClick }) {
   return (
     <BaseStayPage>
       <MainVideo src="stay1-video.mp4" />
+      <CloseButton />
       <CompensateDiv />
       <PdpImage src="stay1-pdp-screen-shot.jpeg" />
-      <PageActions onBookClick={() => scrollViewport(2870)} />
+      <PageActions
+        hostImage="stay1-host.jpeg"
+        onBookClick={() => scrollViewport(2870)}
+      />
       <PageInfo
         title="$200, 4 guests, entire house"
         tags={["#treehouse", "#beach", "#superhost", "#tiny-home"]}
@@ -30,6 +35,7 @@ export default function Stay1Page({ onTagClick, onLocationTagClick }) {
         onTagClick={onTagClick}
         onLocationTagClick={onLocationTagClick}
       />
+      <ScrollUpButton />
     </BaseStayPage>
   );
 }

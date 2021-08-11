@@ -13,7 +13,8 @@ export default function PageInfo({
       style={{
         position: "absolute",
         left: 10,
-        bottom: 80,
+        right: 60,
+        bottom: 70,
         color: "#fff"
       }}
     >
@@ -37,8 +38,6 @@ export default function PageInfo({
         {tags.map((t) => (
           <Tag onTagClick={onTagClick} key={t} value={t} />
         ))}
-      </div>
-      <div>
         {locationTags.map((t) => (
           <Tag onTagClick={onLocationTagClick} key={t} value={t} />
         ))}

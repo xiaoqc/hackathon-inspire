@@ -3,14 +3,15 @@ import { IconShare, IconHeart } from "./Icons";
 export default function PageActions({
   onBookClick,
   onShareClick,
-  onSaveClick
+  onSaveClick,
+  hostImage
 }) {
   return (
     <div
       style={{
         position: "absolute",
         right: 15,
-        bottom: 80,
+        bottom: 70,
         color: "#fff"
       }}
       className="page-actions"
@@ -23,6 +24,9 @@ export default function PageActions({
       </ActionContainer>
       <ActionContainer onClick={onShareClick}>
         <IconShare />
+      </ActionContainer>
+      <ActionContainer>
+        <PageActionImg src={hostImage} />
       </ActionContainer>
     </div>
   );
