@@ -24,8 +24,8 @@ export default function Viewport({ children }) {
         style={{
           background: "#fff",
           position: "absolute",
-          height: 6,
-          bottom: 30,
+          height: 5,
+          bottom: 28,
           borderRadius: 5,
           left: 130,
           right: 130
