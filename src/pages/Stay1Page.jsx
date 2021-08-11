@@ -14,7 +14,7 @@ function scrollViewport(distance) {
     .scroll({ top: distance, behavior: "smooth" });
 }
 
-export default function Stay1Page({ setSceneIndex }) {
+export default function Stay1Page({ onTagClick, onLocationTagClick }) {
   return (
     <BaseStayPage>
       <MainVideo src="stay1-video.mp4" />
@@ -27,10 +27,8 @@ export default function Stay1Page({ setSceneIndex }) {
         locationTags={["#laketahoe", "#francetravel"]}
         location="📍 Josha tree, California"
         onReviewsClick={() => scrollViewport(3010)}
-        onTagClick={() => setSceneIndex(SceneToIndexMap.NavigateToHashtagPage)}
-        onLocationTagClick={() =>
-          setSceneIndex(SceneToIndexMap.NavigateLocationHashtagPage)
-        }
+        onTagClick={onTagClick}
+        onLocationTagClick={onLocationTagClick}
       />
     </BaseStayPage>
   );

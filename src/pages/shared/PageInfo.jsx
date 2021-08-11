@@ -48,6 +48,7 @@ export default function PageInfo({
         style={{
           opacity: 0.8
         }}
+        onClick={onLocationTagClick}
       >
         {location}
       </div>
