@@ -24,6 +24,9 @@ export default function PageActions({
       <ActionContainer onClick={onShareClick}>
         <IconShare />
       </ActionContainer>
+      <ActionContainer>
+        <PageActionImg src="stay1-host.jpeg" />
+      </ActionContainer>
     </div>
   );
 }
