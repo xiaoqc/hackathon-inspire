@@ -14,7 +14,7 @@ function scrollViewport(distance) {
     .scroll({ top: distance, behavior: "smooth" });
 }
 
-export default function Stay1VideoPage({ setSceneIndex }) {
+export default function Stay1Page({ setSceneIndex }) {
   return (
     <BaseStayPage>
       <MainVideo src="stay1-video.mp4" />

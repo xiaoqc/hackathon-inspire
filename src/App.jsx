@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
+import EnterAndBrowse from "./scenes/EnterAndBrowse";
 import Stay1SwipeToPDP from "./scenes/Stay1SwipeToPDP";
 import SwipeToNextVideo from "./scenes/SwipeToNextVideo";
 import NavigateToHashtagPage from "./scenes/NavigateToHashtagPage";
@@ -8,6 +9,7 @@ import NavigateLocationHashtagPage from "./scenes/NavigateLocationHashtagPage";
 import Viewport from "./Viewport";
 
 const scenes = [
+  EnterAndBrowse,
   Stay1SwipeToPDP,
   SwipeToNextVideo,
   NavigateToHashtagPage,
