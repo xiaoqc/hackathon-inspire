@@ -5,6 +5,10 @@ import Stay1SwipeToPDP from "./scenes/Stay1SwipeToPDP";
 import SwipeToNextVideo from "./scenes/SwipeToNextVideo";
 import NavigateToHashtagPage from "./scenes/NavigateToHashtagPage";
 import NavigateLocationHashtagPage from "./scenes/NavigateLocationHashtagPage";
+import SaveToWishlist from "./scenes/SaveToWishlist";
+import SelectCheckoutDate from "./scenes/SelectCheckoutDate";
+import ShareVideo from "./scenes/ShareVideo";
+import CheckReviews from "./scenes/CheckReviews";
 
 import Viewport from "./Viewport";
 
@@ -13,7 +17,11 @@ const scenes = [
   Stay1SwipeToPDP,
   SwipeToNextVideo,
   NavigateToHashtagPage,
-  NavigateLocationHashtagPage
+  NavigateLocationHashtagPage,
+  SaveToWishlist,
+  SelectCheckoutDate,
+  ShareVideo,
+  CheckReviews
 ];
 
 export default function App() {

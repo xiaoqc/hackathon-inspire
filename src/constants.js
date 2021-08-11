@@ -10,5 +10,9 @@ export const SceneToIndexMap = {
   Stay1SwipeToPDP: 0,
   SwipeToNextVideo: 1,
   NavigateToHashtagPage: 2,
-  NavigateLocationHashtagPage: 3
+  NavigateLocationHashtagPage: 3,
+  SaveToWishlist: 4,
+  SelectCheckoutDate: 5,
+  ShareVideo: 6,
+  CheckReviews: 7
 };

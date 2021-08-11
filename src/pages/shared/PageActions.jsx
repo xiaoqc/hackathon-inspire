@@ -1,9 +1,10 @@
-import { IconShare, IconHeart } from "./Icons";
+import { IconShare, IconHeart, IconBack } from "./Icons";
 
 export default function PageActions({
   onBookClick,
   onShareClick,
-  onSaveClick
+  onSaveClick,
+  onBackClick
 }) {
   return (
     <div

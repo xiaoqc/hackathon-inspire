@@ -48,3 +48,42 @@ export function PdpImage({ src }) {
     />
   );
 }
+
+export function CheckoutDateImage({ src }) {
+  return (
+    <img
+      src={src}
+      style={{
+        scrollSnapAlign: "start",
+        width: "100%"
+      }}
+      alt=""
+    />
+  );
+}
+
+export function ShareItemImage({ src }) {
+  return (
+    <img
+      src={src}
+      style={{
+        scrollSnapAlign: "start",
+        width: "100%"
+      }}
+      alt=""
+    />
+  );
+}
+
+export function ReviewsImage({ src }) {
+  return (
+    <img
+      src={src}
+      style={{
+        scrollSnapAlign: "start",
+        width: "100%"
+      }}
+      alt=""
+    />
+  );
+}
